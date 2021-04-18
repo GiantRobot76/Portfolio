@@ -1,6 +1,10 @@
-/*Fonts, backgrounds, etc. applied to all elements */
+/*Fonts, backgrounds, etc. applied to all or most elements */
 * {
   font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: lightblue;
 }
 
 /*Header Related Element Stylings*/
@@ -36,4 +40,33 @@ header nav ul li a {
 
 header a {
   text-decoration: none;
+}
+
+/*Styling for "About me" Section*/
+
+#about-me {
+  display: flex;
+  height: 400px;
+}
+
+.about-me-headline {
+  height: 200px;
+  width: 150px;
+  padding-top: 140px;
+  padding-left: 10px;
+  border-right: solid black 3px;
+}
+
+.profile-pic {
+  display: inline;
+  height: 200px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.bio {
+  padding-top: 100px;
+  padding-left: 20px;
+  height: 20px;
+  width: 1000px;
 }
