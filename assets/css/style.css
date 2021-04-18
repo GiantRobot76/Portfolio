@@ -1,0 +1,39 @@
+/*Fonts, backgrounds, etc. applied to all elements */
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/*Header Related Element Stylings*/
+header {
+  height: 50px;
+  width: 100%;
+  background-color: hsl(240, 50%, 35%);
+}
+
+header h1 {
+  display: inline;
+  float: left;
+  margin: 2px;
+  padding: 2px;
+  color: white;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  text-docoration: none;
+  margin: 5px;
+  padding: 7px;
+  float: right;
+  font-size: large;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+}
