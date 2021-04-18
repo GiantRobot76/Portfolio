@@ -42,31 +42,106 @@ header a {
   text-decoration: none;
 }
 
-/*Styling for "About me" Section*/
-
-#about-me {
-  display: flex;
-  height: 400px;
+header nav ul li :hover {
+  border: black 3px solid;
+  color: black;
+  background-color: orangered;
+  font-size: larger;
 }
 
+/*Styling for "About me" Section*/
 .about-me-headline {
+  color: navy;
+  text-align: center;
+}
+
+.bio-box {
+  display: flex;
+  width: 100%;
   height: 200px;
-  width: 150px;
-  padding-top: 140px;
-  padding-left: 10px;
-  border-right: solid black 3px;
 }
 
 .profile-pic {
-  display: inline;
-  height: 200px;
-  padding-top: 50px;
-  padding-left: 50px;
+  box-shadow: 10px 10px 10px grey;
+  border: 2px solid black;
+  margin: 5px;
 }
 
 .bio {
-  padding-top: 100px;
-  padding-left: 20px;
-  height: 20px;
-  width: 1000px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+/*Styling for "My Work" Section*/
+
+.my-work-headline {
+  color: navy;
+  text-align: center;
+}
+
+.my-work-box {
+  display: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.link-image {
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.robot-text {
+  content: "Drone Army";
+}
+
+/*Styling for "My Contacts" Section*/
+.contact-me-headline {
+  color: navy;
+  text-align: center;
+}
+
+.contact-box {
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  background-color: hsl(240, 50%, 35%);
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-list li {
+  display: inline;
+  margin-top: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.contact-list li a {
+  display: inline;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: grey;
+  }
+
+  header nav ul li {
+    float: none;
+  }
+
+  .contact-box {
+    line-height: 50%;
+  }
 }
