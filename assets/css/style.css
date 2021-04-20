@@ -131,6 +131,11 @@ header nav ul li :hover {
   flex: 1 2 0;
 }
 
+.robot-style-image:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
 /*Card Setting Set at Fixed Height and Width for all other items to Keep Cards Same Size*/
 .card {
   display: flex;
