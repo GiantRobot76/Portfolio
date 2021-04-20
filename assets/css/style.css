@@ -1,3 +1,9 @@
+:root {
+  --white: white;
+  --black: black;
+  --navy: navy;
+}
+
 /*Fonts, backgrounds, etc. applied to all or most elements */
 * {
   font-family: "Lexend Deca", sans-serif;
@@ -19,7 +25,7 @@ header h1 {
   float: left;
   margin: 2px;
   padding: 2px;
-  color: white;
+  color: var(--white);
 }
 
 header nav ul {
@@ -43,15 +49,15 @@ header a {
 }
 
 header nav ul li :hover {
-  border: black 3px solid;
-  color: black;
+  border: var(--black) 3px solid;
+  color: var(--black);
   background-color: orangered;
   font-size: larger;
 }
 
 /*Styling for "About me" Section*/
 .about-me-headline {
-  color: navy;
+  color: var(--navy);
   text-align: center;
 }
 
@@ -63,7 +69,7 @@ header nav ul li :hover {
 
 .profile-pic {
   box-shadow: 10px 10px 10px grey;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   margin: 5px;
 }
 
@@ -75,25 +81,62 @@ header nav ul li :hover {
 /*Styling for "My Work" Section*/
 
 .my-work-headline {
-  color: navy;
+  color: var(--navy);
   text-align: center;
 }
 
+/*Settings for FlexBox Cards Hosting Links */
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .column {
   padding: 5px;
 }
 
+/*Specialized Styling for First (Larger) item*/
+
+.robot-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: var(--black) solid 2px;
+  height: 750px;
+  width: 750px;
+}
+
+.robot-text-container {
+  background-color: lightslategray;
+  height: 100%;
+  width: 100%;
+  border: solid var(--black) 1px;
+  flex: 1 2 0;
+}
+
+.robot-card p {
+  background-color: lightslategray;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  flex: 1 2 0;
+  font-size: large;
+}
+
+.robot-style-image {
+  height: 100%;
+  width: 100%;
+  flex: 1 2 0;
+}
+
+/*Card Setting Set at Fixed Height and Width for all other items to Keep Cards Same Size*/
 .card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: black solid 2px;
+  border: var(--black) solid 2px;
   height: 400px;
   width: 400px;
 }
@@ -102,7 +145,7 @@ header nav ul li :hover {
   background-color: lightslategray;
   height: 100%;
   width: 100%;
-  border: solid black 1px;
+  border: solid var(--black) 1px;
 }
 
 .card p {
@@ -117,6 +160,8 @@ header nav ul li :hover {
   width: 100%;
   max-height: 280px;
 }
+
+/*Image Interaction*/
 
 .style-image:hover {
   filter: grayscale(100%);
@@ -144,31 +189,36 @@ header nav ul li :hover {
   display: inline;
   margin-top: 5px;
   padding: 10px;
-  color: white;
+  color: var(--white);
 }
 
 .contact-list li a {
   display: inline;
   margin: 5px;
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
+/*Footer Settings*/
 .footer {
   text-align: center;
   font-weight: bold;
+  margin: 10px;
 }
 
+/*Media Queries to Better Manage Small Screens*/
 @media screen and (max-width: 800px) {
-  body {
-    background-color: grey;
-  }
-
   header nav ul li {
-    float: none;
+    float: center;
+    line-height: 20%;
   }
 
   .contact-box {
-    line-height: 50%;
+    float: center;
+    transform: scale(25%);
+  }
+
+  .footer {
+    transform: scale(25%);
   }
 }
