@@ -205,6 +205,15 @@ header nav ul li :hover {
   text-decoration: none;
 }
 
+.directions {
+  text-align: center;
+  color: navy;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
 /*Footer Settings*/
 .footer {
   text-align: center;
