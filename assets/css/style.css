@@ -230,8 +230,18 @@ header nav ul li :hover {
     line-height: 20%;
   }
 
+  .profile-pic {
+    display: none;
+  }
   .bio-box {
-    font-size: smaller;
+    display: block;
+    margin: 10px;
+  }
+
+  .bio {
+    font-size: x-small;
+    display: block;
+    margin-bottom: 5px;
   }
 
   .contact-box {
